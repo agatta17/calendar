@@ -161,7 +161,7 @@ export default {
 }
 .calendar {
   display: grid;
-  grid-template-columns: repeat(7,14%);
+  grid-template-columns: repeat(7,minmax(13%, 1fr));
   grid-gap: 3px;
 }
 .calendar__day-name {
@@ -220,5 +220,16 @@ export default {
 .date__event_green {
   background-color: #E8F2EA;
   color: #9BC8A6;
+}
+@media screen and (max-width: 768px) {
+  .calendar-wrap {
+    padding: 6px;
+  }
+  .date {
+    padding: 2px 0;
+  }
+  .date__event {
+    font-size: 8px;
+  }
 }
 </style>

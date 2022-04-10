@@ -31,8 +31,14 @@ export default {
 <style>
 body {
   background-color: #F5F5F5;
+  margin: 0;
 }
 #app {
   margin-top: 40px;
+}
+@media screen and (max-width: 768px) {
+  #app {
+    margin-top: 10px;
+  }
 }
 </style>
